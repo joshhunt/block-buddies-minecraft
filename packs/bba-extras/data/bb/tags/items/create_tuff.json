@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "create:cut_tuff_slab",
+    "create:polished_cut_tuff_slab",
+    "create:cut_tuff_brick_slab",
+    "create:small_tuff_brick_slab",
+    "#create:stone_types/tuff"
+  ]
+}

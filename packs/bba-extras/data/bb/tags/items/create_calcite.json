@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "create:cut_calcite_slab",
+    "create:polished_cut_calcite_slab",
+    "create:cut_calcite_brick_slab",
+    "create:small_calcite_brick_slab",
+    "#create:stone_types/calcite"
+  ]
+}

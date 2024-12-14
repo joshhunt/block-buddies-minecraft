@@ -1,0 +1,25 @@
+{
+  "replace": "false",
+  "values": [
+    "minecraft:oak_leaves",
+    "minecraft:spruce_leaves",
+    "minecraft:birch_leaves",
+    "minecraft:jungle_leaves",
+    "minecraft:acacia_leaves",
+    "minecraft:cherry_leaves",
+    "minecraft:dark_oak_leaves",
+    "minecraft:mangrove_leaves",
+    "minecraft:azalea_leaves",
+    "minecraft:flowering_azalea_leaves",
+    "minecraft:warped_wart_block",
+    "minecraft:nether_wart_block",
+    "#chipped:oak_leaves",
+    "#chipped:spruce_leaves",
+    "#chipped:birch_leaves",
+    "#chipped:jungle_leaves",
+    "#chipped:acacia_leaves",
+    "#chipped:dark_oak_leaves",
+    "#chipped:warped_wart_block",
+    "#chipped:nether_wart_block"
+  ]
+}

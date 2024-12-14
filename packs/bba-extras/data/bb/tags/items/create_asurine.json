@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "create:cut_asurine_slab",
+    "create:polished_cut_asurine_slab",
+    "create:cut_asurine_brick_slab",
+    "create:small_asurine_brick_slab",
+    "#create:stone_types/asurine"
+  ]
+}
