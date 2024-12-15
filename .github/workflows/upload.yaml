@@ -1,4 +1,4 @@
-name: GitHub Actions Demo
+name: Upload data pack
 on: [workflow_dispatch]
 jobs:
   Explore-GitHub-Actions:
