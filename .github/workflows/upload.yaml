@@ -1,7 +1,9 @@
-name: Upload data pack
+name: Upload everything
 on: [workflow_dispatch]
+
 jobs:
-  Upload-BBA-Extras:
+  Test-All:
+    name: Test all
     runs-on: ubuntu-latest
     steps:
       - name: Check out repository code
@@ -24,6 +26,14 @@ jobs:
       - name: Check formatting
         run: pnpm test
 
+  Upload-BBA-Extras:
+    name: Upload BBA Extras datapack
+    runs-on: ubuntu-latest
+    needs: [Test-All]
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v4
+
       - name: SFTP upload
         uses: Dylan700/sftp-upload-action@d751f7ba2b7c9b18ed91a0ff6266566f4541dfbb
         with:
@@ -34,3 +44,22 @@ jobs:
           uploads: |
             ./packs/bba-extras => ./world/datapacks/bba-extras
           delete: "true"
+
+  Upload-Dynmap:
+    name: Upload Dynmap config
+    runs-on: ubuntu-latest
+    needs: [Test-All]
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v4
+
+      - name: SFTP upload
+        uses: Dylan700/sftp-upload-action@d751f7ba2b7c9b18ed91a0ff6266566f4541dfbb
+        with:
+          server: ${{secrets.SFTP_SERVER}}
+          username: ${{secrets.SFTP_USERNAME}}
+          password: ${{secrets.SFTP_PASSWORD}}
+          port: 2022
+          # List individual files to upload
+          uploads: |
+            ./configs/dynmap/markers.yml => ./dynmap/markers.yml
