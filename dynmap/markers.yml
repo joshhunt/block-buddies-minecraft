@@ -34,6 +34,14 @@ sets:
         x: 2319.0
         y: 160.0
         z: -2449.0
+      danis_project:
+        world: First Adventure
+        label: Danis Project
+        icon: diamond
+        markup: false
+        x: 1848
+        y: 64
+        z: -1267
     lines: {}
     layerprio: 0
 playersets: {}
