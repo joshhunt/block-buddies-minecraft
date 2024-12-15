@@ -1,0 +1,55 @@
+name: Upload datapacks
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - packs/**
+
+jobs:
+  upload:
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Test
+        uses: ./.github/actions/$test.yaml
+
+      - name: Check out code
+        uses: actions/checkout@v4
+
+      - uses: pnpm/action-setup@v4
+        name: Install pnpm
+        with:
+          run_install: false
+
+      - name: Install Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: "pnpm"
+
+      - name: Install dependencies
+        run: pnpm install
+
+      - name: Send uploading message
+        run: node scripts/sendSayMessage.js
+        env:
+          MESSAGE_ID: "pack_uploading"
+
+      - name: SFTP upload
+        uses: ./.github/actions/$sftp-upload.yaml
+        with:
+          uploads: |
+            ./packs/bba-extras => ./world/datapacks/bba-extras
+
+      - name: Send uploading message
+        run: node scripts/sendSayMessage.js
+        env:
+          MESSAGE_ID: "reload_packs_started"
+
+      - name: Send reload command
+        run: node scripts/reloadDataPacks.js
+
+      - name: Send uploading message
+        run: node scripts/sendSayMessage.js
+        env:
+          MESSAGE_ID: "reload_packs_finished"

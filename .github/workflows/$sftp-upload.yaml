@@ -1,0 +1,35 @@
+on:
+  workflow_call:
+    inputs:
+      uploads:
+        required: true
+        type: string
+      ignore:
+        required: false
+        type: string
+      delete:
+        required: false
+        type: string
+        default: "false"
+    secrets:
+      SFTP_SERVER:
+        required: true
+      SFTP_USERNAME:
+        required: true
+      SFTP_PASSWORD:
+        required: true
+
+jobs:
+  upload:
+    runs-on: ubuntu-24.04
+    steps:
+      - name: SFTP upload
+        uses: Dylan700/sftp-upload-action@d751f7ba2b7c9b18ed91a0ff6266566f4541dfbb
+        with:
+          server: ${{secrets.SFTP_SERVER}}
+          username: ${{secrets.SFTP_USERNAME}}
+          password: ${{secrets.SFTP_PASSWORD}}
+          port: 2022
+          uploads: ${{inputs.uploads}}
+          ignore: ${{inputs.ignore}}
+          delete: ${{inputs.delete}}
