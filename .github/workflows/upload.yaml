@@ -34,4 +34,3 @@ jobs:
           uploads: |
             ./packs/bba-extras => ./world/datapacks/bba-extras
           delete: "true"
-          dry-run: true
