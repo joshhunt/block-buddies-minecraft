@@ -1,0 +1,39 @@
+%YAML 1.1
+---
+isSafe: true
+icons: {}
+sets:
+  markers:
+    hide: false
+    circles: {}
+    deficon: default
+    areas: {}
+    label: Markers
+    markers:
+      venta_monto:
+        world: First Adventure
+        label: Venta Monto
+        icon: temple
+        markup: false
+        x: 2036.0
+        y: 210.0
+        z: 928.0
+      fairmeadow:
+        world: First Adventure
+        label: Fairmeadow
+        icon: flower
+        markup: false
+        x: -417.0
+        y: 77.0
+        z: -2650.0
+      frostvale:
+        world: First Adventure
+        label: Frostvale
+        icon: temple
+        markup: false
+        x: 2319.0
+        y: 160.0
+        z: -2449.0
+    lines: {}
+    layerprio: 0
+playersets: {}
