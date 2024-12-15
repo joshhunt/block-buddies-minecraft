@@ -1,7 +1,7 @@
 name: Upload data pack
 on: [workflow_dispatch]
 jobs:
-  Explore-GitHub-Actions:
+  Upload-BBA-Extras:
     runs-on: ubuntu-latest
     steps:
       - name: Check out repository code
