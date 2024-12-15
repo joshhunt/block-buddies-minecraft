@@ -40,6 +40,8 @@ jobs:
         run: node scripts/sendSayMessage.js
         env:
           MESSAGE_ID: "pack_uploading"
+          STEL_TOKEN: ${{secrets.STEL_TOKEN}}
+          STEL_SERVER_ID: ${{secrets.STEL_SERVER_ID}}
 
       - name: SFTP upload
         uses: Dylan700/sftp-upload-action@d751f7ba2b7c9b18ed91a0ff6266566f4541dfbb
@@ -56,11 +58,18 @@ jobs:
         run: node scripts/sendSayMessage.js
         env:
           MESSAGE_ID: "reload_packs_started"
+          STEL_TOKEN: ${{secrets.STEL_TOKEN}}
+          STEL_SERVER_ID: ${{secrets.STEL_SERVER_ID}}
 
       - name: Send reload command
         run: node scripts/reloadDataPacks.js
+        env:
+          STEL_TOKEN: ${{secrets.STEL_TOKEN}}
+          STEL_SERVER_ID: ${{secrets.STEL_SERVER_ID}}
 
       - name: Send uploading message
         run: node scripts/sendSayMessage.js
         env:
           MESSAGE_ID: "reload_packs_finished"
+          STEL_TOKEN: ${{secrets.STEL_TOKEN}}
+          STEL_SERVER_ID: ${{secrets.STEL_SERVER_ID}}
