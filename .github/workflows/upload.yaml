@@ -4,7 +4,7 @@ on: [workflow_dispatch]
 jobs:
   Test-All:
     name: Test all
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     steps:
       - name: Check out repository code
         uses: actions/checkout@v4
@@ -60,6 +60,7 @@ jobs:
           username: ${{secrets.SFTP_USERNAME}}
           password: ${{secrets.SFTP_PASSWORD}}
           port: 2022
+          dry-run: true
           # List individual files to upload
           uploads: |
             ./configs/dynmap/markers.yml => ./dynmap/markers.yml
