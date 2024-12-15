@@ -28,7 +28,7 @@ jobs:
 
   Upload-BBA-Extras:
     name: Upload BBA Extras datapack
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     needs: [Test-All]
     steps:
       - name: Check out repository code
@@ -47,7 +47,7 @@ jobs:
 
   Upload-Dynmap:
     name: Upload Dynmap config
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     needs: [Test-All]
     steps:
       - name: Check out repository code
