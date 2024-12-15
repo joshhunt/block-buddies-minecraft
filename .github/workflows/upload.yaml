@@ -43,7 +43,7 @@ jobs:
           port: 2022
           uploads: |
             ./packs/bba-extras => ./world/datapacks/bba-extras
-          delete: "true"
+          delete: "true" # Completely replace the destination
 
   Upload-Dynmap:
     name: Upload Dynmap config
@@ -60,7 +60,7 @@ jobs:
           username: ${{secrets.SFTP_USERNAME}}
           password: ${{secrets.SFTP_PASSWORD}}
           port: 2022
-          dry-run: true
-          # List individual files to upload
           uploads: |
-            ./configs/dynmap/markers.yml => ./dynmap/markers.yml
+            ./dynmap => ./dynmap
+          ignore: |
+            README.md
