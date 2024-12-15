@@ -1,4 +1,4 @@
-name: Upload datapacks
+name: Upload dynmap configs
 on:
   push:
     branches:
@@ -7,7 +7,7 @@ on:
       - dynmap/**
 
 jobs:
-  upload:
+  Upload-Dynmap-Configs:
     runs-on: ubuntu-24.04
     steps:
       #

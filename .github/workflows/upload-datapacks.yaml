@@ -7,7 +7,7 @@ on:
       - packs/**
 
 jobs:
-  upload:
+  Upload-Datapacks:
     runs-on: ubuntu-24.04
     steps:
       #
