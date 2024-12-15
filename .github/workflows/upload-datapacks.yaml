@@ -14,7 +14,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Test
-        uses: ./.github/actions/$test.yaml
+        uses: ./.github/workflows/$test.yaml
 
       - uses: pnpm/action-setup@v4
         name: Install pnpm
@@ -36,7 +36,7 @@ jobs:
           MESSAGE_ID: "pack_uploading"
 
       - name: SFTP upload
-        uses: ./.github/actions/$sftp-upload.yaml
+        uses: ./.github/workflows/$sftp-upload.yaml
         with:
           uploads: |
             ./packs/bba-extras => ./world/datapacks/bba-extras
