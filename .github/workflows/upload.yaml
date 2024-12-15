@@ -23,3 +23,15 @@ jobs:
 
       - name: Check formatting
         run: pnpm test
+
+      - name: SFTP upload
+        uses: Dylan700/sftp-upload-action@d751f7ba2b7c9b18ed91a0ff6266566f4541dfbb
+        with:
+          server: ${{secrets.SFTP_SERVER}}
+          username: ${{secrets.SFTP_USERNAME}}
+          password: ${{secrets.SFTP_PASSWORD}}
+          port: 22
+          uploads: |
+            ./packs/bba-extras => ./world/datapacks/bba-extras
+          delete: "true"
+          dry-run: true
