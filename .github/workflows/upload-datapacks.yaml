@@ -10,11 +10,10 @@ jobs:
   upload:
     runs-on: ubuntu-24.04
     steps:
+      #
+      # Set up Node environment
       - name: Check out code
         uses: actions/checkout@v4
-
-      - name: Test
-        uses: ./.github/workflows/$test.yaml
 
       - uses: pnpm/action-setup@v4
         name: Install pnpm
@@ -30,14 +29,26 @@ jobs:
       - name: Install dependencies
         run: pnpm install
 
+      #
+      # Test the repo
+      - name: Check formatting
+        run: pnpm test
+
+      #
+      # Actually run the action
       - name: Send uploading message
         run: node scripts/sendSayMessage.js
         env:
           MESSAGE_ID: "pack_uploading"
 
       - name: SFTP upload
-        uses: ./.github/workflows/$sftp-upload.yaml
+        uses: Dylan700/sftp-upload-action@d751f7ba2b7c9b18ed91a0ff6266566f4541dfbb
         with:
+          server: ${{secrets.SFTP_SERVER}}
+          username: ${{secrets.SFTP_USERNAME}}
+          password: ${{secrets.SFTP_PASSWORD}}
+          port: 2022
+          delete: true # Delete the existing folder before uploading to fully replace it
           uploads: |
             ./packs/bba-extras => ./world/datapacks/bba-extras
 

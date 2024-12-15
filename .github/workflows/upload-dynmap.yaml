@@ -10,15 +10,39 @@ jobs:
   upload:
     runs-on: ubuntu-24.04
     steps:
+      #
+      # Set up Node environment
       - name: Check out code
         uses: actions/checkout@v4
 
-      - name: Test
-        uses: ./.github/workflows/$test.yaml
-
-      - name: SFTP upload
-        uses: ./.github/workflows/$sftp-upload.yaml
+      - uses: pnpm/action-setup@v4
+        name: Install pnpm
         with:
+          run_install: false
+
+      - name: Install Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: "pnpm"
+
+      - name: Install dependencies
+        run: pnpm install
+
+      #
+      # Test the repo
+      - name: Check formatting
+        run: pnpm test
+
+      #
+      # Actually run the action
+      - name: SFTP upload
+        uses: Dylan700/sftp-upload-action@d751f7ba2b7c9b18ed91a0ff6266566f4541dfbb
+        with:
+          server: ${{secrets.SFTP_SERVER}}
+          username: ${{secrets.SFTP_USERNAME}}
+          password: ${{secrets.SFTP_PASSWORD}}
+          port: 2022
           uploads: |
             ./dynmap => ./dynmap
           ignore: |
