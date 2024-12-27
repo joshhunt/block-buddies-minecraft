@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "#chipped:iron_bars",
+    "minecraft:iron_bars",
+    "minecraft:iron_door",
+    "minecraft:iron_trapdoor",
+    "minecraft:chain"
+  ]
+}
