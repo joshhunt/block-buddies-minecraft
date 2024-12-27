@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "#railways:palettes/dye_groups/slashed",
+    "#railways:palettes/dye_groups/riveted",
+    "#railways:palettes/dye_groups/pillar",
+    "#railways:palettes/dye_groups/smokebox",
+    "#railways:palettes/dye_groups/plated",
+    "#railways:palettes/dye_groups/flat_slashed",
+    "#railways:palettes/dye_groups/flat_riveted",
+    "#railways:palettes/dye_groups/brass_wrapped_slashed",
+    "#railways:palettes/dye_groups/copper_wrapped_slashed",
+    "#railways:palettes/dye_groups/iron_wrapped_slashed"
+  ]
+}
