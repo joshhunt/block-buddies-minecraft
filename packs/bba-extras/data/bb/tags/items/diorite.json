@@ -1,0 +1,29 @@
+{
+  "replace": false,
+  "values": [
+    "#create:stone_types/diorite",
+    "#chipped:diorite",
+
+    "minecraft:diorite",
+    "minecraft:polished_diorite",
+    "minecraft:diorite_wall",
+    "minecraft:diorite_stairs",
+    "minecraft:polished_diorite_stairs",
+    "minecraft:diorite_slab",
+    "minecraft:polished_diorite_slab",
+
+    "create:cut_diorite_slab",
+    "create:polished_cut_diorite_slab",
+    "create:cut_diorite_brick_slab",
+    "create:small_diorite_brick_slab",
+
+    "design_decor:diorite_castel_brick_stairs",
+    "design_decor:diorite_castel_brick_slab",
+    "design_decor:diorite_castel_brick_wall",
+    "design_decor:diorite_castel_bricks",
+    "design_decor:diorite_castel_tile_stairs",
+    "design_decor:diorite_castel_tile_slab",
+    "design_decor:diorite_castel_tile_wall",
+    "design_decor:diorite_castel_tiles"
+  ]
+}

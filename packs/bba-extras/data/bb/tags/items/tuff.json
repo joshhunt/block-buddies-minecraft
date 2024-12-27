@@ -1,0 +1,21 @@
+{
+  "replace": false,
+  "values": [
+    "#create:stone_types/tuff",
+    "#chipped:tuff",
+
+    "create:cut_tuff_slab",
+    "create:polished_cut_tuff_slab",
+    "create:cut_tuff_brick_slab",
+    "create:small_tuff_brick_slab",
+
+    "design_decor:tuff_castel_brick_stairs",
+    "design_decor:tuff_castel_brick_slab",
+    "design_decor:tuff_castel_brick_wall",
+    "design_decor:tuff_castel_bricks",
+    "design_decor:tuff_castel_tile_stairs",
+    "design_decor:tuff_castel_tile_slab",
+    "design_decor:tuff_castel_tile_wall",
+    "design_decor:tuff_castel_tiles"
+  ]
+}

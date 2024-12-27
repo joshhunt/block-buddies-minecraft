@@ -1,0 +1,21 @@
+{
+  "replace": false,
+  "values": [
+    "#create:stone_types/scoria",
+
+    "create:cut_scoria_slab",
+    "create:polished_cut_scoria_slab",
+    "create:cut_scoria_brick_slab",
+    "create:small_scoria_brick_slab",
+
+    "design_decor:scoria_castel_brick_stairs",
+    "design_decor:scoria_castel_brick_slab",
+    "design_decor:scoria_castel_brick_wall",
+    "design_decor:scoria_castel_bricks",
+
+    "design_decor:scoria_castel_tile_stairs",
+    "design_decor:scoria_castel_tile_slab",
+    "design_decor:scoria_castel_tile_wall",
+    "design_decor:scoria_castel_tiles"
+  ]
+}

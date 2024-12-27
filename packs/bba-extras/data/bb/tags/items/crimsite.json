@@ -1,0 +1,21 @@
+{
+  "replace": false,
+  "values": [
+    "#create:stone_types/crimsite",
+
+    "create:cut_crimsite_slab",
+    "create:polished_cut_crimsite_slab",
+    "create:cut_crimsite_brick_slab",
+    "create:small_crimsite_brick_slab",
+
+    "design_decor:crimsite_castel_brick_stairs",
+    "design_decor:crimsite_castel_brick_slab",
+    "design_decor:crimsite_castel_brick_wall",
+    "design_decor:crimsite_castel_bricks",
+
+    "design_decor:crimsite_castel_tile_stairs",
+    "design_decor:crimsite_castel_tile_slab",
+    "design_decor:crimsite_castel_tile_wall",
+    "design_decor:crimsite_castel_tiles"
+  ]
+}

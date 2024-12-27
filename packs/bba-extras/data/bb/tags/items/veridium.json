@@ -1,0 +1,21 @@
+{
+  "replace": false,
+  "values": [
+    "#create:stone_types/veridium",
+
+    "create:cut_veridium_slab",
+    "create:polished_cut_veridium_slab",
+    "create:cut_veridium_brick_slab",
+    "create:small_veridium_brick_slab",
+
+    "design_decor:veridium_castel_brick_stairs",
+    "design_decor:veridium_castel_brick_slab",
+    "design_decor:veridium_castel_brick_wall",
+    "design_decor:veridium_castel_bricks",
+
+    "design_decor:veridium_castel_tile_stairs",
+    "design_decor:veridium_castel_tile_slab",
+    "design_decor:veridium_castel_tile_wall",
+    "design_decor:veridium_castel_tiles"
+  ]
+}

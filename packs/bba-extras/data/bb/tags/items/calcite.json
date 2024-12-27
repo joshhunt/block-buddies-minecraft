@@ -1,0 +1,21 @@
+{
+  "replace": false,
+  "values": [
+    "#create:stone_types/calcite",
+    "#chipped:calcite",
+
+    "create:cut_calcite_slab",
+    "create:polished_cut_calcite_slab",
+    "create:cut_calcite_brick_slab",
+    "create:small_calcite_brick_slab",
+
+    "design_decor:calcite_castel_brick_stairs",
+    "design_decor:calcite_castel_brick_slab",
+    "design_decor:calcite_castel_brick_wall",
+    "design_decor:calcite_castel_bricks",
+    "design_decor:calcite_castel_tile_stairs",
+    "design_decor:calcite_castel_tile_slab",
+    "design_decor:calcite_castel_tile_wall",
+    "design_decor:calcite_castel_tiles"
+  ]
+}

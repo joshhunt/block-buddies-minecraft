@@ -1,0 +1,21 @@
+{
+  "replace": false,
+  "values": [
+    "#create:stone_types/ochrum",
+
+    "create:cut_ochrum_slab",
+    "create:polished_cut_ochrum_slab",
+    "create:cut_ochrum_brick_slab",
+    "create:small_ochrum_brick_slab",
+
+    "design_decor:ochrum_castel_brick_stairs",
+    "design_decor:ochrum_castel_brick_slab",
+    "design_decor:ochrum_castel_brick_wall",
+    "design_decor:ochrum_castel_bricks",
+
+    "design_decor:ochrum_castel_tile_stairs",
+    "design_decor:ochrum_castel_tile_slab",
+    "design_decor:ochrum_castel_tile_wall",
+    "design_decor:ochrum_castel_tiles"
+  ]
+}

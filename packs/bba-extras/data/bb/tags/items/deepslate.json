@@ -1,0 +1,23 @@
+{
+  "replace": false,
+  "values": [
+    "#create:stone_types/deepslate",
+    "#chipped:deepslate",
+
+    "create:cut_deepslate_slab",
+    "create:polished_cut_deepslate_slab",
+    "create:cut_deepslate_brick_slab",
+    "create:small_deepslate_brick_slab",
+
+    "design_decor:deepslate_castel_brick_stairs",
+    "design_decor:deepslate_castel_brick_slab",
+    "design_decor:deepslate_castel_brick_wall",
+    "design_decor:deepslate_castel_bricks",
+    "design_decor:deepslate_castel_tile_stairs",
+    "design_decor:deepslate_castel_tile_slab",
+    "design_decor:deepslate_castel_tile_wall",
+    "design_decor:deepslate_castel_tiles",
+    "design_decor:stone_tiles",
+    "design_decor:red_stone_tiles"
+  ]
+}

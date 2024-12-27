@@ -1,0 +1,29 @@
+{
+  "replace": false,
+  "values": [
+    "#create:stone_types/andesite",
+    "#chipped:andesite",
+
+    "minecraft:andesite",
+    "minecraft:polished_andesite",
+    "minecraft:andesite_wall",
+    "minecraft:andesite_stairs",
+    "minecraft:polished_andesite_stairs",
+    "minecraft:andesite_slab",
+    "minecraft:polished_andesite_slab",
+
+    "create:cut_andesite_slab",
+    "create:polished_cut_andesite_slab",
+    "create:cut_andesite_brick_slab",
+    "create:small_andesite_brick_slab",
+
+    "design_decor:andesite_castel_brick_stairs",
+    "design_decor:andesite_castel_brick_slab",
+    "design_decor:andesite_castel_brick_wall",
+    "design_decor:andesite_castel_bricks",
+    "design_decor:andesite_castel_tile_stairs",
+    "design_decor:andesite_castel_tile_slab",
+    "design_decor:andesite_castel_tile_wall",
+    "design_decor:andesite_castel_tiles"
+  ]
+}

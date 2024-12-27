@@ -1,0 +1,21 @@
+{
+  "replace": false,
+  "values": [
+    "#create:stone_types/granite",
+    "#chipped:granite",
+
+    "create:cut_granite_slab",
+    "create:polished_cut_granite_slab",
+    "create:cut_granite_brick_slab",
+    "create:small_granite_brick_slab",
+
+    "design_decor:granite_castel_brick_stairs",
+    "design_decor:granite_castel_brick_slab",
+    "design_decor:granite_castel_brick_wall",
+    "design_decor:granite_castel_bricks",
+    "design_decor:granite_castel_tile_stairs",
+    "design_decor:granite_castel_tile_slab",
+    "design_decor:granite_castel_tile_wall",
+    "design_decor:granite_castel_tiles"
+  ]
+}
