@@ -1,0 +1,26 @@
+{
+  "replace": false,
+  "values": [
+    "arts_and_crafts:cork",
+    "arts_and_crafts:cork_boat",
+    "arts_and_crafts:cork_button",
+    "arts_and_crafts:cork_chest_boat",
+    "arts_and_crafts:cork_door",
+    "arts_and_crafts:cork_fence",
+    "arts_and_crafts:cork_fence_gate",
+    "arts_and_crafts:cork_hanging_sign",
+    "arts_and_crafts:cork_leaves",
+    "arts_and_crafts:cork_log",
+    "arts_and_crafts:cork_planks",
+    "arts_and_crafts:cork_pressure_plate",
+    "arts_and_crafts:cork_sapling",
+    "arts_and_crafts:cork_sign",
+    "arts_and_crafts:cork_slab",
+    "arts_and_crafts:cork_stairs",
+    "arts_and_crafts:cork_trapdoor",
+    "arts_and_crafts:cork_wood",
+    "arts_and_crafts:smooth_cork",
+    "arts_and_crafts:stripped_cork_log",
+    "arts_and_crafts:stripped_cork_wood"
+  ]
+}
