@@ -4,6 +4,8 @@
     "#create:stone_types/calcite",
     "#chipped:calcite",
 
+    "minecraft:calcite",
+
     "create:cut_calcite_slab",
     "create:polished_cut_calcite_slab",
     "create:cut_calcite_brick_slab",

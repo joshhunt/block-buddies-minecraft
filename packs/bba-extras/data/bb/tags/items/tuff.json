@@ -4,6 +4,8 @@
     "#create:stone_types/tuff",
     "#chipped:tuff",
 
+    "minecraft:tuff",
+
     "create:cut_tuff_slab",
     "create:polished_cut_tuff_slab",
     "create:cut_tuff_brick_slab",
