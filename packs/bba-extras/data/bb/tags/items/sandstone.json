@@ -1,0 +1,12 @@
+{
+  "replace": "false",
+  "values": [
+    "#c:sandstone",
+    "#c:sandstone_stairs",
+    "#c:sandstone_slabs",
+    "#chipped:sandstone",
+    "#chipped:red_sandstone",
+    "minecraft:red_sandstone_wall",
+    "minecraft:sandstone_wall"
+  ]
+}
