@@ -4,6 +4,14 @@
     "#create:stone_types/granite",
     "#chipped:granite",
 
+    "minecraft:granite",
+    "minecraft:granite_slab",
+    "minecraft:granite_stairs",
+    "minecraft:granite_wall",
+    "minecraft:polished_granite",
+    "minecraft:polished_granite_slab",
+    "minecraft:polished_granite_stairs",
+
     "create:cut_granite_slab",
     "create:polished_cut_granite_slab",
     "create:cut_granite_brick_slab",
