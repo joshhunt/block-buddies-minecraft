@@ -1,0 +1,28 @@
+{
+  "replace": "false",
+  "values": [
+    "minecraft:crafting_table",
+    "#c:workbench",
+    "#minecraft:compasses",
+    "minecraft:bookshelf",
+    "minecraft:clock",
+    "minecraft:item_frame",
+    "minecraft:glow_item_frame",
+    "minecraft:iron_bars",
+    "minecraft:armor_stand",
+    "minecraft:bell",
+    "minecraft:chain",
+    "minecraft:nametag",
+    "#chipped:iron_bars",
+    "chipped:botanist_workbench",
+    "chipped:glassblower",
+    "chipped:carpenters_table",
+    "chipped:loom_table",
+    "chipped:mason_table",
+    "chipped:alchemy_bench",
+    "chipped:tinkering_table",
+    "#c:furnaces",
+    "#minecraft:anvil",
+    "#c:villager_job_sites"
+  ]
+}
