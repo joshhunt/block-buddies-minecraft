@@ -2,7 +2,8 @@
   "replace": false,
   "values": [
     "#create:stone_types/dripstone",
-    "#chipped:dripstone",
+    "#chipped:dripstone_block",
+    "#chipped:pointed_dripstone",
 
     "create:cut_dripstone_slab",
     "create:polished_cut_dripstone_slab",
