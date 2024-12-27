@@ -1,0 +1,13 @@
+{
+  "replace": "false",
+  "values": [
+    "#chipped:mud",
+    "#chipped:packed_mud",
+    "minecraft:mud",
+    "minecraft:mud_brick_slab",
+    "minecraft:packed_mud",
+    "minecraft:mud_bricks",
+    "minecraft:mud_brick_stairs",
+    "minecraft:mud_brick_wall"
+  ]
+}
